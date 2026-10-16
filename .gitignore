@@ -1,0 +1,22 @@
+# Local, machine-specific config (never commit real credentials)
+candidate_models.json
+settings.json
+
+# Run outputs
+runs/
+
+# Ground-truth data (large / proprietary — supply your own, see data/results_agent/README.md)
+data/results_agent/*
+!data/results_agent/README.md
+data_train/*
+!data_train/README.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Misc
+.DS_Store
+*.log

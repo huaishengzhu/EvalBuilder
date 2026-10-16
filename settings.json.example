@@ -1,0 +1,9 @@
+{
+  "//": "Copy this file to ~/.claude/settings.json (or point --settings at it). This configures the model that DRIVES the research agent itself (i.e. the model that designs the benchmark), via an Anthropic-Messages-compatible endpoint. It is separate from candidate_models.json.example, which configures the CANDIDATE models being evaluated.",
+
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://your-llm-gateway.example.com/",
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_AUTH_TOKEN",
+    "ANTHROPIC_MODEL": "claude-opus-4-6"
+  }
+}

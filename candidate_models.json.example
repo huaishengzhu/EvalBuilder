@@ -1,0 +1,21 @@
+{
+  "//": "Copy this file to ~/.autoeval/candidate_models.json (or point --candidate-models-config at it) and fill in your own endpoint/credentials. This file is intentionally NOT read from inside the repo, so it never needs to be committed.",
+
+  "default": {
+    "endpoint": "https://your-llm-gateway.example.com/v1/messages",
+    "api_key": "YOUR_DEFAULT_API_KEY"
+  },
+
+  "overrides": {
+    "//": "Only needed for candidate models that require a different endpoint/key/upstream-model-name than the default above. Any field left out falls back to 'default'.",
+
+    "some-model-with-a-different-key": {
+      "api_key": "YOUR_OTHER_API_KEY",
+      "model_name": "some-model-with-a-different-key"
+    },
+
+    "some-model-with-a-renamed-upstream-id": {
+      "model_name": "actual-upstream-model-id-v1"
+    }
+  }
+}
