@@ -1,4 +1,6 @@
-# auto-eval
+# EvalBuilder
+
+Code for the paper **"EvalBuilder: Can LLMs Build Efficient Benchmarks?"** ([arXiv:2610.20099](https://arxiv.org/abs/2610.20099)): an LLM agent is given a task and an expensive reference benchmark, and is asked to construct a lower-cost proxy benchmark that faithfully distinguishes among candidate models and solutions — evaluated along **fidelity**, **efficiency**, and **robustness**, within an iterative environment where the agent refines its benchmark under a fixed time budget.
 
 An LLM agent designs its own **lightweight** substitute for a heavy,
 sandboxed benchmark (e.g. SWE-Bench Verified): it writes brand-new tasks,
@@ -146,3 +148,16 @@ runs/<run-name>/
   collapse": if every model gets a similar score, pairwise_accuracy/spearman
   can still look fine by luck, but `spread_ratio << 1` reveals the verifier
   isn't actually discriminating between models.
+
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@article{zhu2026evalbuilder,
+  title={EvalBuilder: Can LLMs Build Efficient Benchmarks?},
+  author={Zhu, Huaisheng and Zhang, Hangfan and Xiao, Teng and Xu, Siyuan and Zhou, Shijie and Guo, Zhimeng and Chen, Zhengyu and Wang, Jingang},
+  journal={arXiv preprint arXiv:2610.20099},
+  year={2026}
+}
+```
